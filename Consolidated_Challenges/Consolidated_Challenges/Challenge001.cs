@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Consolidated_Challenges
+{
+	public class Challenge001
+	{
+		public void Challenge_001()
+		{
+			Console.WriteLine("What is your name?");
+			var name = Console.ReadLine();
+			Console.WriteLine("What is your age?");
+			var age = Console.ReadLine();
+			Console.WriteLine("What is your username?");
+			var username = Console.ReadLine();
+
+			Console.WriteLine("Your name is " + name + " and you are " + age + " years old, and your username is " + username);
+
+			Console.WriteLine("Wish to open the challenge?");
+			string startURL = Console.ReadLine();
+			if(startURL == "yes" || startURL == "y")
+				System.Diagnostics.Process.Start("https://www.reddit.com/r/dailyprogrammer/comments/pih8x/easy_challenge_1/");
+		}
+	}
+}
