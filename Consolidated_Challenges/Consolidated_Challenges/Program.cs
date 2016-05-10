@@ -18,7 +18,7 @@ namespace Consolidated_Challenges
 				string input = Console.ReadLine();
 				input = input.ToLower().Trim();
 
-				if(input == "exit" || input == "quit" || input == "q")
+				if(input == "exit" || input == "quit" || input == "q" || input == "n" || input == "no")
 					break;
 				if(input.Length > 0 && !char.IsDigit(input[0]))
 				{
@@ -26,11 +26,13 @@ namespace Consolidated_Challenges
 					{
 						case "list":
 							//Loops through all challenges and show them.
+							Console.WriteLine();
 							string nameSpace = "Consolidated_Challenges";							
 							var q = from t in Assembly.GetExecutingAssembly().GetTypes()
 									where t.IsClass && t.Namespace == nameSpace && t.Name.Substring(0, 3) == "Cha"
 									select t;
 							q.ToList().ForEach(t => Console.WriteLine(t.Name));
+							Console.WriteLine();
 							break;
 						case "clear":
 							Console.Clear();
@@ -44,17 +46,14 @@ namespace Consolidated_Challenges
 				{
 					string myClass = "Challenge" + input;
 					string myMethod = "Challenge_" + input;
-					StartChallenge(myClass, myMethod);
+					StartChallenge(myClass, myMethod, input);
 				}
 				else
 					Console.WriteLine("Commands: list, clear, quit, exit or a three digit number\n");
 			}
-
-			Console.WriteLine("Press any key to exit");
-			Console.ReadLine();
 		}
 
-		public static void StartChallenge(string myClass, string myMethod)
+		public static void StartChallenge(string myClass, string myMethod, string challenge)
 		{			
 			try
 			{
@@ -62,6 +61,8 @@ namespace Consolidated_Challenges
 				Type type = Type.GetType("Consolidated_Challenges." + myClass);
 				MethodInfo methodInfo = type.GetMethod(myMethod);
 				Object obj = Activator.CreateInstance(type);
+				Console.Clear();
+				Console.WriteLine("Starting challenge " + challenge);
 				methodInfo.Invoke(obj, null);
 			}
 			catch(Exception)
@@ -75,7 +76,7 @@ namespace Consolidated_Challenges
 
 /*
  			Console.WriteLine("Wish to open the challenge?");
-			string input = Console.ReadLine();
-			if(input == "yes" || input == "y")
-				System.Diagnostics.Process.Start("https://www.reddit.com/r/dailyprogrammer/comments/pih8x/easy_challenge_1/");
+			string dailyprogrammer = Console.ReadLine();
+			if(dailyprogrammer == "yes" || dailyprogrammer == "y")
+				System.Diagnostics.Process.Start("");
  */

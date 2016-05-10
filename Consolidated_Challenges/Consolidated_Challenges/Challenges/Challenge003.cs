@@ -20,8 +20,8 @@ namespace Consolidated_Challenges
 			Console.WriteLine(c);
 
 			Console.WriteLine("Wish to open the challenge?");
-			string input = Console.ReadLine();
-			if(input == "yes" || input == "y")
+			string dailyprogrammer = Console.ReadLine();
+			if(dailyprogrammer == "yes" || dailyprogrammer == "y")
 				System.Diagnostics.Process.Start("https://www.reddit.com/r/dailyprogrammer/comments/pkw2m/2112012_challenge_3_easy/");
 		}
 

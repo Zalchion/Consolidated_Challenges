@@ -15,7 +15,7 @@ namespace Consolidated_Challenges
 				Console.WriteLine("Would you like to find Force (F), Mass (m) or Acceleration (a)?\nOr 'quit' to quit.");
 				string input = Console.ReadLine();
 
-				if(input == "exit" || input == "quit" || input == "q")
+				if(input.ToLower() == "exit" || input.ToLower() == "quit" || input.ToLower() == "q")
 					break;
 
 				if(input.ToLower() == "f" || input.ToLower() == "force")
@@ -61,8 +61,8 @@ namespace Consolidated_Challenges
 			}
 
 			Console.WriteLine("Wish to open the challenge?");
-			string startURL = Console.ReadLine();
-			if(startURL == "yes" || startURL == "y")
+			string dailyprogrammer = Console.ReadLine();
+			if(dailyprogrammer == "yes" || dailyprogrammer == "y")
 				System.Diagnostics.Process.Start("https://www.reddit.com/r/dailyprogrammer/comments/pjbj8/easy_challenge_2/");
 		}
 

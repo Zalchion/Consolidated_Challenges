@@ -20,8 +20,8 @@ namespace Consolidated_Challenges
 			Console.WriteLine("Your name is " + name + " and you are " + age + " years old, and your username is " + username);
 
 			Console.WriteLine("Wish to open the challenge?");
-			string startURL = Console.ReadLine();
-			if(startURL == "yes" || startURL == "y")
+			string dailyprogrammer = Console.ReadLine();
+			if(dailyprogrammer == "yes" || dailyprogrammer == "y")
 				System.Diagnostics.Process.Start("https://www.reddit.com/r/dailyprogrammer/comments/pih8x/easy_challenge_1/");
 		}
 	}
