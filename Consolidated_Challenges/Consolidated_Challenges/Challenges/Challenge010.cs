@@ -15,6 +15,7 @@ namespace Consolidated_Challenges
 			string number = Console.ReadLine();
 			StringBuilder b = new StringBuilder(number);
 
+			b.Replace("x", "A");
 			b.Replace("1", "x");
 			b.Replace("2", "x");
 			b.Replace("3", "x");
@@ -25,7 +26,7 @@ namespace Consolidated_Challenges
 			b.Replace("8", "x");
 			b.Replace("9", "x");
 			b.Replace("0", "x");
-
+			
 			string result = b.ToString();
 
 			var validLst = new List<string>() { "xxxxxxxxxx", "xxx-xxx-xxxx", "xxx.xxx.xxxx", "(xxx)xxx-xxxx", "(xxx) xxx-xxxx",

@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Challenges\Challenge015.cs" />
+    <Compile Include="Challenges\Challenge014.cs" />
+    <Compile Include="Challenges\Challenge013.cs" />
+    <Compile Include="Challenges\Challenge012.cs" />
+    <Compile Include="Challenges\Challenge011.cs" />
     <Compile Include="Challenges\Challenge009.cs" />
     <Compile Include="Challenges\Challenge007.cs" />
     <Compile Include="Challenges\Challenge001.cs" />

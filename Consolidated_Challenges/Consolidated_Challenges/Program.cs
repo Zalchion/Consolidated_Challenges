@@ -30,8 +30,8 @@ namespace Consolidated_Challenges
 							string nameSpace = "Consolidated_Challenges";							
 							var q = from t in Assembly.GetExecutingAssembly().GetTypes()
 									where t.IsClass && t.Namespace == nameSpace && t.Name.Substring(0, 3) == "Cha"
-									select t;
-							q.ToList().ForEach(t => Console.WriteLine(t.Name));
+									select t.Name;							
+							q.OrderBy(s => s).ToList().ForEach(t => Console.WriteLine(t));
 							Console.WriteLine();
 							break;
 						case "clear":
