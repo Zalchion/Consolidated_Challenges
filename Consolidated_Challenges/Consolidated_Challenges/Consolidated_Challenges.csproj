@@ -43,12 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Challenges\Challenge009.cs" />
+    <Compile Include="Challenges\Challenge007.cs" />
     <Compile Include="Challenges\Challenge001.cs" />
     <Compile Include="Challenges\Challenge002.cs" />
     <Compile Include="Challenges\Challenge003.cs" />
     <Compile Include="Challenges\Challenge004.cs" />
     <Compile Include="Challenges\Challenge005.cs" />
     <Compile Include="Challenges\Challenge006.cs" />
+    <Compile Include="Challenges\Challenge008.cs" />
+    <Compile Include="Challenges\Challenge010.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
