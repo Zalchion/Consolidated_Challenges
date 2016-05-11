@@ -26,13 +26,13 @@ namespace Consolidated_Challenges
 					switch(input)
 					{
 						case "list":
-							//Loops through all challenges and show them.
+							//Loops through all available challenges and show them.
 							Console.WriteLine();
 							string nameSpace = "Consolidated_Challenges";							
 							var q = from t in Assembly.GetExecutingAssembly().GetTypes()
 									where t.IsClass && t.Namespace == nameSpace && t.Name.Substring(0, 3) == "Cha"
-									select t.Name;							
-							q.OrderBy(s => s).ToList().ForEach(t => Console.WriteLine(t));
+									select t.Name;
+							q.OrderBy(s => s).ToList().ForEach(t => Console.Write(t.Substring(t.Length-3, 3) + "\t"));
 							Console.WriteLine();
 							break;
 						case "clear":
