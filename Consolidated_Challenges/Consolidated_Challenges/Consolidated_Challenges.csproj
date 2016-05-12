@@ -43,11 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Challenge026.cs" />
-    <Compile Include="Challenge027.cs" />
-    <Compile Include="Challenge028.cs" />
-    <Compile Include="Challenge029.cs" />
-    <Compile Include="Challenge030.cs" />
+    <Compile Include="Challenge 26-50\Challenge026.cs" />
+    <Compile Include="Challenge 26-50\Challenge027.cs" />
+    <Compile Include="Challenge 26-50\Challenge028.cs" />
+    <Compile Include="Challenge 26-50\Challenge029.cs" />
+    <Compile Include="Challenge 26-50\Challenge030.cs" />
+    <Compile Include="Challenge 26-50\Challenge032.cs" />
+    <Compile Include="Challenge 26-50\Challenge033.cs" />
+    <Compile Include="Challenge 26-50\Challenge034.cs" />
+    <Compile Include="Challenge 26-50\Challenge035.cs" />
     <Compile Include="Challenges 1-25\Challenge021.cs" />
     <Compile Include="Challenges 1-25\Challenge023.cs" />
     <Compile Include="Challenges 1-25\Challenge025.cs" />
@@ -77,9 +81,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Challenge 26-50\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

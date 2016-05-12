@@ -12,7 +12,7 @@ namespace Consolidated_Challenges
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("I started doing the challenges to learn programming by myself.\nMost early challenges is very badly done, some have been revisited.");
+			Console.WriteLine("DISCLAIMER: I started doing the challenges to learn programming.\nMost of the early challenges is very badly done.");
 			while(true)
 			{
 				Console.WriteLine("Write the number of the challenge you wish to view IE ('001' or '077').\n 'help' for commands or 'quit' to quit");
