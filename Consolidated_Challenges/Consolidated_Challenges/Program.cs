@@ -13,9 +13,10 @@ namespace Consolidated_Challenges
 		static void Main(string[] args)
 		{
 			Console.WriteLine("DISCLAIMER: I started doing the challenges to learn programming.\nMost of the early challenges is very badly done.");
+			Console.WriteLine("Write the number of the challenge you wish to view IE ('001' or '077').\n 'help' for commands or 'quit' to quit");
+			
 			while(true)
 			{
-				Console.WriteLine("Write the number of the challenge you wish to view IE ('001' or '077').\n 'help' for commands or 'quit' to quit");
 				string input = Console.ReadLine();
 				input = input.ToLower().Trim();
 
@@ -23,39 +24,65 @@ namespace Consolidated_Challenges
 					break;
 				if(input.Length > 0 && !char.IsDigit(input[0]))
 				{
-					switch(input)
+					switch(input.ToLower())
 					{
 						case "list":
-							//Loops through all available challenges and show them.
+						case "lst":
+							//Loops through all available challenges and show them in ascending order.
 							Console.WriteLine();
-							string nameSpace = "Consolidated_Challenges";							
-							var q = from t in Assembly.GetExecutingAssembly().GetTypes()
-									where t.IsClass && t.Namespace == nameSpace && t.Name.Substring(0, 3) == "Cha"
-									select t.Name;
-							q.OrderBy(s => s).ToList().ForEach(t => Console.Write(t.Substring(t.Length-3, 3) + "\t"));
+							FindChallenges("ascending").ForEach(t => Console.Write(t + "\t"));
+							Console.WriteLine("\n");
+							break;
+						case "listdescending":
+						case "descending":
+						case "listdes":
+						case "lstdes":
+							//Loops through all available challenges and show them in descending order.
 							Console.WriteLine();
+							FindChallenges("descending").ForEach(t => Console.Write(t + "\t"));
+							Console.WriteLine("\n");
+							break;
+						case "missing":
+						case "miss":
+							//Loops through all available challenges, and find the missing ones
+							Console.WriteLine();
+							PrintMissingChallenges(FindChallenges("ascending"), "ascending");
+							Console.WriteLine("\n");
+							break;
+						case "missdes":
+						case "missingdes":
+						case "missdesending":
+						case "missingdesending":
+							//Loops through all available challenges, and find the missing ones
+							Console.WriteLine();
+							PrintMissingChallenges(FindChallenges("descending"), "descending");
+							Console.WriteLine("\n");
 							break;
 						case "clear":
 							Console.Clear();
+							break;
+						case "help":
+						case "commands":
+						case "command":
+							Console.WriteLine("\nCommands: clear, quit, exit, a three digit number\nlist, listdescending, descending, listdes\nmissing, missingdescending, missingdes");
 							break;
 						default:
 							Console.WriteLine("\nThe command '" + input + "' does not exist.\n");
 							break;
 					}
 				}
-				else if(input.Length > 0 && char.IsDigit(input[0]))
+				else if(input.Length > 0 && char.IsDigit(input[1]))
 				{
 					string myClass = "Challenge" + input;
 					string myMethod = "Challenge_" + input;
 					StartChallenge(myClass, myMethod, input);
 				}
-				else
-					Console.WriteLine("Commands: list, clear, quit, exit or a three digit number\n");
+
 			}
 		}
 
 		public static void StartChallenge(string myClass, string myMethod, string challenge)
-		{			
+		{
 			try
 			{
 				//Gets the challenge class and starts it unless an error is thrown
@@ -70,6 +97,43 @@ namespace Consolidated_Challenges
 			{
 				//The challenge number did not exist
 				Console.WriteLine(myClass + " does not exist. type 'list' to see the list of all challenges\n");
+			}
+		}
+
+		public static List<string> FindChallenges(string descending)
+		{
+			string nameSpace = "Consolidated_Challenges";
+			var s = from t in Assembly.GetExecutingAssembly().GetTypes()
+					where t.IsClass && t.Namespace == nameSpace && t.Name.Substring(0, 3) == "Cha"
+					select t.Name.Substring(t.Name.Length - 3, 3);
+			if(descending.ToLower() == "descending")
+				return s.OrderByDescending(t => t).ToList();
+			return s.OrderBy(t => t).ToList();
+		}
+
+		public static void PrintMissingChallenges(List<string> allChallenges, string descending)
+		{
+			string highest = "";
+
+			if(descending.ToLower() == "descending")
+			{
+				highest = allChallenges.First().Substring(allChallenges.Last().Length - 3, 3);
+				for(int i = int.Parse(highest); i > 1; i--)
+				{
+					if(allChallenges.Contains(i.ToString().PadLeft(3, '0')))
+						continue;
+					Console.Write(i.ToString().PadLeft(3, '0') + "\t");
+				}
+			}
+			else
+			{
+				highest = allChallenges.Last().Substring(allChallenges.Last().Length - 3, 3);
+				for(int i = 1; i < int.Parse(highest); i++)
+				{
+					if(allChallenges.Contains(i.ToString().PadLeft(3, '0')))
+						continue;
+					Console.Write(i.ToString().PadLeft(3, '0') + "\t");
+				}
 			}
 		}
 	}

@@ -52,6 +52,10 @@
     <Compile Include="Challenge 26-50\Challenge033.cs" />
     <Compile Include="Challenge 26-50\Challenge034.cs" />
     <Compile Include="Challenge 26-50\Challenge035.cs" />
+    <Compile Include="Challenge 26-50\Challenge036.cs" />
+    <Compile Include="Challenge 26-50\Challenge037.cs" />
+    <Compile Include="Challenge 26-50\Challenge039.cs" />
+    <Compile Include="Challenge 26-50\Challenge040.cs" />
     <Compile Include="Challenges 1-25\Challenge021.cs" />
     <Compile Include="Challenges 1-25\Challenge023.cs" />
     <Compile Include="Challenges 1-25\Challenge025.cs" />
