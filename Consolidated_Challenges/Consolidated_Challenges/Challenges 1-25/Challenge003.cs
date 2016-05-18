@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge003
 	{
+		public static string Description()
+		{
+			return "String manipulation: Simple Cipher/Decipher";
+		}
+
 		public void Challenge_003()
 		{
 			Console.WriteLine("String to cipher and uncipher.");

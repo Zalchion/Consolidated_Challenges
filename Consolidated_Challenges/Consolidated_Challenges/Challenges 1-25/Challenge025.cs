@@ -8,13 +8,18 @@ namespace Consolidated_Challenges
 {
 	public class Challenge025
 	{
+		public static string Description()
+		{
+			return "Math problem: Calculate majority";
+		}
+
 		public void Challenge_025()
 		{
 			Console.WriteLine("How many candidates?");
 			int numberOfCandidates = Int32.Parse(Console.ReadLine());
-			int[] votes = new int[numberOfCandidates];
+			var votes = new int[numberOfCandidates];
 
-			Dictionary<string, int> candidates = new Dictionary<string, int>();
+			var candidates = new Dictionary<string, int>();
 
 			for(int i = 1; i <= numberOfCandidates; i++)
 			{

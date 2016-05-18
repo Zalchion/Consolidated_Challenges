@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge017
 	{
+		public static string Description()
+		{
+			return "String manipulation: Pyramid";
+		}
+
 		public void Challenge_017()
 		{
 			Console.WriteLine("Height of pyramid");

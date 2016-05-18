@@ -8,8 +8,14 @@ namespace Consolidated_Challenges
 {
 	public class Challenge004
 	{
+		public static string Description()
+		{
+			return "String manipulation: Random password generator";
+		}
+
 		public void Challenge_004()
 		{	
+			Random random = new Random();
 			while(true)
 			{
 				Console.WriteLine("Random Password Generator\nHow many characters do you want?");
@@ -21,7 +27,6 @@ namespace Consolidated_Challenges
 
 				string chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz!@#$%^&*(!@#$%^&*)_.-+/";
 				string password = "";
-				Random random = new Random();
 
 				if(int.TryParse(length, out pswLength) && int.TryParse(amount, out amountOfPsw))
 				{

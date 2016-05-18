@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge013
 	{
+		public static string Description()
+		{
+			return "Math problem: Calculate day of the year";
+		}
+
 		public void Challenge_013()
 		{
 			string leapYear = "";

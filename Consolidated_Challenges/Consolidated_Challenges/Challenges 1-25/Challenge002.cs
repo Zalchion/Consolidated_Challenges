@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge002
 	{
+		public static string Description()
+		{
+			return "Math problems: f=ma";
+		}
+
 		public void Challenge_002()
 		{
 			while(true)

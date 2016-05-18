@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge007
 	{
+		public static string Description()
+		{
+			return "String manipulation: Morse Code";
+		}
+
 		public void Challenge_007()
 		{	
 			var test = FromMorse(".... . .-.. .-.. --- / -.. .- .. .-.. -.-- / .--. .-. --- --. .-. .- -- -- . .-. / --. --- --- -.. / .-.. ..- -.-. -.- / --- -. / - .... . / -.-. .... .- .-.. .-.. . -. --. . ... / - --- -.. .- -.--");

@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge021
 	{
+		public static string Description()
+		{
+			return "List manipulation: Number parsing";
+		}
+		
 		public void Challenge_021()
 		{
 			Console.WriteLine("Input a number");

@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge010
 	{
+		public static string Description()
+		{
+			return "String manipulation: Telephone number validation";
+		}
+
 		public void Challenge_010()
 		{
 			Console.WriteLine("Check if a telephone number is valid:");

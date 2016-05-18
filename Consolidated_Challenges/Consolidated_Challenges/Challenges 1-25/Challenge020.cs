@@ -9,6 +9,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge020
 	{
+		public static string Description()
+		{
+			return "Math problem: Calculate primes";
+		}
+
 		public void Challenge_020()
 		{
 			Stopwatch sw = new Stopwatch();

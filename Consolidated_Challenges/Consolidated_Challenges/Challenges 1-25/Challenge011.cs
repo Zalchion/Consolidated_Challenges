@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge011
 	{
+		public static string Description()
+		{
+			return "Math problem: Calculate day";
+		}
+
 		public void Challenge_011()
 		{
 			Console.WriteLine("What year?");

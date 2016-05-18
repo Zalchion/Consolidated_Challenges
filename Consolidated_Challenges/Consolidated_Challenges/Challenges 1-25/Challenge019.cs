@@ -10,6 +10,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge019
 	{
+		public static string Description()
+		{
+			return "String/math manipulation: Read file, count letters";
+		}
+
 		public void Challenge_019()
 		{
 			int count = 0;
@@ -23,7 +28,7 @@ namespace Consolidated_Challenges
 						count++;
 				}
 			}
-			Console.WriteLine(count);
+			Console.WriteLine(count + "letters.");
 
 			Console.WriteLine("Wish to open the challenge?");
 			string dailyprogrammer = Console.ReadLine();

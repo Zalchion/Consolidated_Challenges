@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge016
 	{
+		public static string Description()
+		{
+			return "String manipulation: Remove letters";
+		}
+
 		public void Challenge_016()
 		{
 			Console.WriteLine("Write a string");

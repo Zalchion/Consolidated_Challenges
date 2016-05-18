@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge009
 	{
+		public static string Description()
+		{
+			return "List manipulation: Sorting";
+		}
+
 		public void Challenge_009()
 		{
 			SortNumbers();

@@ -8,6 +8,10 @@ namespace Consolidated_Challenges
 {
 	public class Challenge008
 	{
+		public static string Description()
+		{
+			return "Loops: For loop";
+		}
 		public void Challenge_008()
 		{
 			for(int i = 99; i > 0; i--)

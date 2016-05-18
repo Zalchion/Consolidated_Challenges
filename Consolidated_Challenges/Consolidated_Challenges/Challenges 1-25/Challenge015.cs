@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge015
 	{
+		public static string Description()
+		{
+			return "String manipulation: Trimming";
+		}
+
 		public void Challenge_015()
 		{
 			string test = "   this is a test   ";

@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge023
 	{
+		public static string Description()
+		{
+			return "List manipulation: Split list";
+		}
+
 		public void Challenge_023()
 		{
 			List<string> stringToSplit = new List<string>() { "test 1", "test 2", "test 3", "test 4", "test 5", "middle one" };

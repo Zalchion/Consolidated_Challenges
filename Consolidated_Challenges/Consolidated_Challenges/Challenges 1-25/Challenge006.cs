@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge006
 	{
+		public static string Description()
+		{
+			return "Math: Calculate Pi";
+		}
+
 		public void Challenge_006()
 		{
 			Console.WriteLine("Calculate pi to how many decimals?");

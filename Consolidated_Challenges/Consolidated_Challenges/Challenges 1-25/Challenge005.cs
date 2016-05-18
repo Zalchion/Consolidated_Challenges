@@ -8,10 +8,15 @@ namespace Consolidated_Challenges
 {
 	public class Challenge005
 	{
+		public static string Description()
+		{
+			return "String manipulation: Password";
+		}
+
 		public void Challenge_005()
 		{
-			string username = "usern";
-			string password = "passw";
+			string username = "user";
+			string password = "pass";
 			int count = 0;
 			while(true)
 			{

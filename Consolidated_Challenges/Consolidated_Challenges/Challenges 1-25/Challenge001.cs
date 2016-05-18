@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge001
 	{
+		public static string Description()
+		{
+			return "String manipulation: Simple input/output";
+		}
+
 		public void Challenge_001()
 		{
 			Console.WriteLine("What is your name?");

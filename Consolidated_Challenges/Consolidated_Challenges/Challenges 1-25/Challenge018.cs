@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge018
 	{
+		public static string Description()
+		{
+			return "String manipulation: Phone numbers";
+		}
+
 		public void Challenge_018()
 		{
 			int test = 0;
@@ -48,12 +53,11 @@ namespace Consolidated_Challenges
 
 		public static bool IsNumeric(string text)
 		{
-			bool isNumeric = false;
 			int value = 0;
 			if(int.TryParse(text, out value))
-				return isNumeric = true;
+				return true;
 			else
-				return isNumeric = false;
+				return false;
 		}
 
 	}

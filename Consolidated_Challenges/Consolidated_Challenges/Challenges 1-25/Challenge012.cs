@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge012
 	{
+		public static string Description()
+		{
+			return "String manipulation: Permutations";
+		}
+
 		public void Challenge_012()
 		{
 			Console.WriteLine("Input string to count permutations (6+ characters is slow)");
