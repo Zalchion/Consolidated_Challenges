@@ -8,9 +8,14 @@ namespace Consolidated_Challenges
 {
 	public class Challenge035
 	{
+		public static string Description()
+		{
+			return "String/list manipulation: Trianglify";
+		}
+
 		public void Challenge_035()
 		{
-			Console.WriteLine("Number to trianglefy.");
+			Console.WriteLine("Number to trianglify.");
 			int number = int.Parse(Console.ReadLine());
 			var maxnumber = Math.Floor((-1 + Math.Sqrt(1 + 8 * number)) / 2);
 

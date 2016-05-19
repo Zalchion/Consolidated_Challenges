@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge032
 	{
+		public static string Description()
+		{
+			return "Math problem: Casino";
+		}
+
 		public void Challenge_032()
 		{	
 			while(true)

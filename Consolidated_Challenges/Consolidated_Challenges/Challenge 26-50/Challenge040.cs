@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge040
 	{
+		public static string Description()
+		{
+			return "Loops: Several ways to loop";
+		}
+
 		public void Challenge_040()
 		{
 			int target = 10;

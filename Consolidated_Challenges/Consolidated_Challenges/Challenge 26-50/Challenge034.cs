@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge034
 	{
+		public static string Description()
+		{
+			return "Math/list: 2 highest numbers squared";
+		}
+
 		public void Challenge_034()
 		{
 			while(true)

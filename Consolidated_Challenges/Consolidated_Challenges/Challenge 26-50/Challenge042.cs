@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation";
+			return "String manipulation: Bottles";
 		}
 
 		public void Challenge_042()

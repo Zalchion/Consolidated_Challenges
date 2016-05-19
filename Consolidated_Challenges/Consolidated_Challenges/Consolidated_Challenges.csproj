@@ -65,36 +65,38 @@
     <Compile Include="Challenge 26-50\Challenge048.cs" />
     <Compile Include="Challenge 26-50\Challenge049.cs" />
     <Compile Include="Challenge 26-50\Challenge050.cs" />
-    <Compile Include="Challenges 1-25\Challenge021.cs" />
-    <Compile Include="Challenges 1-25\Challenge023.cs" />
-    <Compile Include="Challenges 1-25\Challenge025.cs" />
-    <Compile Include="Challenges 1-25\Challenge016.cs" />
-    <Compile Include="Challenges 1-25\Challenge017.cs" />
-    <Compile Include="Challenges 1-25\Challenge018.cs" />
-    <Compile Include="Challenges 1-25\Challenge019.cs" />
-    <Compile Include="Challenges 1-25\Challenge020.cs" />
-    <Compile Include="Challenges 1-25\Challenge015.cs" />
-    <Compile Include="Challenges 1-25\Challenge014.cs" />
-    <Compile Include="Challenges 1-25\Challenge013.cs" />
-    <Compile Include="Challenges 1-25\Challenge012.cs" />
-    <Compile Include="Challenges 1-25\Challenge011.cs" />
-    <Compile Include="Challenges 1-25\Challenge009.cs" />
-    <Compile Include="Challenges 1-25\Challenge007.cs" />
-    <Compile Include="Challenges 1-25\Challenge001.cs" />
-    <Compile Include="Challenges 1-25\Challenge002.cs" />
-    <Compile Include="Challenges 1-25\Challenge003.cs" />
-    <Compile Include="Challenges 1-25\Challenge004.cs" />
-    <Compile Include="Challenges 1-25\Challenge005.cs" />
-    <Compile Include="Challenges 1-25\Challenge006.cs" />
-    <Compile Include="Challenges 1-25\Challenge008.cs" />
-    <Compile Include="Challenges 1-25\Challenge010.cs" />
+    <Compile Include="Challenge 01-25\Challenge021.cs" />
+    <Compile Include="Challenge 01-25\Challenge023.cs" />
+    <Compile Include="Challenge 01-25\Challenge025.cs" />
+    <Compile Include="Challenge 01-25\Challenge016.cs" />
+    <Compile Include="Challenge 01-25\Challenge017.cs" />
+    <Compile Include="Challenge 01-25\Challenge018.cs" />
+    <Compile Include="Challenge 01-25\Challenge019.cs" />
+    <Compile Include="Challenge 01-25\Challenge020.cs" />
+    <Compile Include="Challenge 01-25\Challenge015.cs" />
+    <Compile Include="Challenge 01-25\Challenge014.cs" />
+    <Compile Include="Challenge 01-25\Challenge013.cs" />
+    <Compile Include="Challenge 01-25\Challenge012.cs" />
+    <Compile Include="Challenge 01-25\Challenge011.cs" />
+    <Compile Include="Challenge 01-25\Challenge009.cs" />
+    <Compile Include="Challenge 01-25\Challenge007.cs" />
+    <Compile Include="Challenge 01-25\Challenge001.cs" />
+    <Compile Include="Challenge 01-25\Challenge002.cs" />
+    <Compile Include="Challenge 01-25\Challenge003.cs" />
+    <Compile Include="Challenge 01-25\Challenge004.cs" />
+    <Compile Include="Challenge 01-25\Challenge005.cs" />
+    <Compile Include="Challenge 01-25\Challenge006.cs" />
+    <Compile Include="Challenge 01-25\Challenge008.cs" />
+    <Compile Include="Challenge 01-25\Challenge010.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Challenge 51-75\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

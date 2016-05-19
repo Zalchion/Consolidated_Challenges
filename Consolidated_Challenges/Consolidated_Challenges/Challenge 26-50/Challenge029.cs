@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge029
 	{
+		public static string Description()
+		{
+			return "String manipulation: Palindrome";
+		}
+
 		public void Challenge_029()
 		{
 			Palindrome("Hannah");

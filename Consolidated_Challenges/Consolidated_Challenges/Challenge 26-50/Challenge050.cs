@@ -28,7 +28,6 @@ namespace Consolidated_Challenges
 				System.Diagnostics.Process.Start("https://www.reddit.com/r/dailyprogrammer/comments/teua8/592012_challenge_50_easy/");
 		}
 
-
 		static void Spend(int credit, int[] items)
 		{
 			for(int i = 0; i < items.Length; i++)

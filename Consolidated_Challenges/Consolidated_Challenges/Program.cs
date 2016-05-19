@@ -31,7 +31,7 @@ namespace Consolidated_Challenges
 						case "lst":
 							//Loops through all available challenges and show them in ascending order.
 							Console.WriteLine();
-							ListChallenges("ascending").OrderBy(x => x.Key).ToList().ForEach(x => { Console.WriteLine(x.Key + "\t" + x.Value); });
+							ListChallenges().OrderBy(x => x.Key).ToList().ForEach(x => { Console.WriteLine(x.Key + "\t" + x.Value); });
 							Console.WriteLine("\n");
 							break;
 						case "listdescending":
@@ -40,23 +40,23 @@ namespace Consolidated_Challenges
 						case "lstdes":
 							//Loops through all available challenges and show them in descending order.
 							Console.WriteLine();
-							ListChallenges("descending").OrderByDescending(x => x.Key).ToList().ForEach(x => { Console.WriteLine(x.Key + "\t" + x.Value); });
+							ListChallenges().OrderByDescending(x => x.Key).ToList().ForEach(x => { Console.WriteLine(x.Key + "\t" + x.Value); });
 							Console.WriteLine("\n");
 							break;
 						case "missing":
 						case "miss":
 							//Loops through all available challenges, and find the missing ones
 							Console.WriteLine();
-							PrintMissingChallenges(ListChallenges("ascending"), "ascending");
+							PrintMissingChallenges(ListChallenges(), "ascending");
 							Console.WriteLine("\n");
 							break;
 						case "missdes":
 						case "missingdes":
 						case "missdesending":
 						case "missingdesending":
-							//Loops through all available challenges, and find the missing ones
+							//Loops through all available challenges, and find the missing ones in descending order
 							Console.WriteLine();
-							PrintMissingChallenges(ListChallenges("descending"), "descending");
+							PrintMissingChallenges(ListChallenges(), "descending");
 							Console.WriteLine("\n");
 							break;
 						case "clear":
@@ -65,7 +65,26 @@ namespace Consolidated_Challenges
 						case "help":
 						case "commands":
 						case "command":
-							Console.WriteLine("\nCommands: clear, quit, exit, a three digit number\nlist, listdescending, descending, listdes\nmissing, missingdescending, missingdes");
+							Console.WriteLine("\nCommands:\n'clear', 'quit', 'exit', a three digit number(IE: '001', '077')\n'list', 'listdescending', 'descending', 'listdes'\n'missing', 'missingdescending', 'missingdes'\n'string', 'math' or 'other' ");
+							break;
+						case "math":
+						case "maths":
+						case "Math":
+						case "Maths":
+							//Loops through all available challenges, and find all containing math
+							ListChallenges().OrderBy(x => x.Key).Where(x => x.Value.ToLower().Contains("math")).ToList().ForEach(x => { Console.WriteLine(x.Key + "\t" + x.Value); });
+							break;
+						case "string":
+						case "String":
+							//Loops through all available challenges, and find all containing string
+							ListChallenges().OrderBy(x => x.Key).Where(x => x.Value.ToLower().Contains("string")).ToList().ForEach(x => { Console.WriteLine(x.Key + "\t" + x.Value); });
+							break;
+						case "other":
+						case "Other":
+						case "others":
+						case "Others":
+							//Loops through all available challenges, and find all not containing string or math
+							ListChallenges().OrderBy(x => x.Key).Where(x => !x.Value.ToLower().Contains("string")).Where(x => !x.Value.ToLower().Contains("math")).ToList().ForEach(x => { Console.WriteLine(x.Key + "\t" + x.Value); });
 							break;
 						default:
 							Console.WriteLine("\nThe command '" + input + "' does not exist.\n");
@@ -100,8 +119,9 @@ namespace Consolidated_Challenges
 			}
 		}
 
-		public static Dictionary<string, string> ListChallenges(string descending)
+		public static Dictionary<string, string> ListChallenges()
 		{
+			//Loops through all .cs files and find all in the "consolidated challenges" namespace and named "challenge"
 			string nameSpace = "Consolidated_Challenges";
 			var dict = new Dictionary<string, string>();
 			var challengeNumber = Assembly.GetExecutingAssembly().GetTypes().Where(q => q.IsClass && q.Namespace == nameSpace && q.Name.Substring(0, 3) == "Cha").Select(w => w).OrderBy(e => e.Name);
@@ -118,19 +138,20 @@ namespace Consolidated_Challenges
 				{
 					description = "No Description";
 				}
-				dict.Add(item.Name.Substring(item.Name.Length-3, 3), description);
+				dict.Add(item.Name.Substring(item.Name.Length - 3, 3), description);
 			}
 
-			if(descending.ToLower() == "descending")
-				return dict.OrderByDescending(entry => entry.Key).ToDictionary(item => item.Key, item => item.Value);
 			return dict.OrderBy(entry => entry.Key).ToDictionary(item => item.Key, item => item.Value);
 		}
-		
+
 		public static void PrintMissingChallenges(Dictionary<string, string> allChallenges, string descending)
 		{
+			//print challenges that doesn't exist yet. 
+			//First find all that exist, then get the highest number and loop through all numbers from one to the highest
 			string highest = "";
 			if(descending.ToLower() == "descending")
 			{
+				allChallenges = allChallenges.OrderByDescending(entry => entry.Key).ToDictionary(item => item.Key, item => item.Value);
 				highest = allChallenges.First().Key.Substring(allChallenges.First().Key.Length - 3, 3);
 				for(int i = int.Parse(highest); i > 1; i--)
 				{

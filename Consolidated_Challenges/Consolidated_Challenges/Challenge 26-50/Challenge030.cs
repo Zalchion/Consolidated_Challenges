@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge030
 	{
+		public static string Description()
+		{
+			return "Math/list problem: Find target number from 2 ints in list of primes";
+		}
+
 		public void Challenge_030()
 		{
 			List<int> primes = new List<int>(new int[] { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101,

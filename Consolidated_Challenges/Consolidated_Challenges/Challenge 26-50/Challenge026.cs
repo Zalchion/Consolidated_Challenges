@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge026
 	{
+		public static string Description()
+		{
+			return "String manipulation: Duplicate letter separation";
+		}
+
 		public void Challenge_026()
 		{
 			Separate("ddaaiillyypprrooggrraammeerr");

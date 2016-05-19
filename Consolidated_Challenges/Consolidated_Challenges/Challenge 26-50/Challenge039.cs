@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge039
 	{
+		public static string Description()
+		{
+			return "String/loop manipulation: Fizz/Buzz";
+		}
+
 		public void Challenge_039()
 		{
 			string fizz = "Fizz";

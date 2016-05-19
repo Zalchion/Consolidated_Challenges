@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge033
 	{
+		public static string Description()
+		{
+			return "String/dictionary manipulation: Flash Cards";
+		}
+
 		public void Challenge_033()
 		{
 			var flashCard = new Dictionary<string, string>(){{"Hello", "Konnichiwa" }, {"Yes", "Hai" }, {"No", "Iie" }, {"10*10", "100" }};
@@ -30,8 +35,6 @@ namespace Consolidated_Challenges
 					var item = flashCard.ElementAt(i);
 					var itemKey = item.Key;
 					var itemValue = item.Value;
-
-					//Console.WriteLine("TEST\nItem: " + item + "\nItemkey: " + itemKey + "\nItemvalue: " + itemValue + "\n");
 				}
 
 				int next = rand.Next(0, flashCard.Count);

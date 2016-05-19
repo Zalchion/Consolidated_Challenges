@@ -9,12 +9,17 @@ namespace Consolidated_Challenges
 {
 	public class Challenge037
 	{
+		public static string Description()
+		{
+			return "String manipulation: Count words, lines and characters in a file";
+		}
+
 		public void Challenge_037()
 		{
 			int wordsCount = 0;
 			int charactersCount = 0;
 
-			Console.WriteLine("Counting hard-coded file. Please wait.\n");
+			Console.WriteLine("Counting. Please wait.\n");
 
 			var content = File.ReadAllLines(Directory.GetCurrentDirectory() + @"\challenge037.txt");
 						

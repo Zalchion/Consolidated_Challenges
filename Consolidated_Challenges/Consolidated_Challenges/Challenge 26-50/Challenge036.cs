@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge036
 	{
+		public static string Description()
+		{
+			return "Math problem: Lockers";
+		}
+
 		public void Challenge_036()
 		{
 			var lockers = new bool[1001];

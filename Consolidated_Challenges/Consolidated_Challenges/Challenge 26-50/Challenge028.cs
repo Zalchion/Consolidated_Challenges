@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge028
 	{
+		public static string Description()
+		{
+			return "List manipulation: Find duplicates";
+		}
+
 		public void Challenge_028()
 		{
 			int[] intArray = { 1, 2, 3, 4, 5, 6, 7, 3, 9, 10, 2, 9, 3 };

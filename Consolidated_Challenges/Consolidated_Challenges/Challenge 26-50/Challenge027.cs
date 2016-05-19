@@ -8,6 +8,11 @@ namespace Consolidated_Challenges
 {
 	public class Challenge027
 	{
+		public static string Description()
+		{
+			return "String manipulation: Year to century";
+		}
+
 		public void Challenge_027()
 		{
 			int year = 0;
