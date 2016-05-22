@@ -88,15 +88,17 @@
     <Compile Include="Challenge 01-25\Challenge006.cs" />
     <Compile Include="Challenge 01-25\Challenge008.cs" />
     <Compile Include="Challenge 01-25\Challenge010.cs" />
+    <Compile Include="Challenge 51-75\Challenge052.cs" />
+    <Compile Include="Challenge 51-75\Challenge053.cs" />
+    <Compile Include="Challenge 51-75\Challenge054.cs" />
+    <Compile Include="Challenge 51-75\Challenge055.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Challenge 51-75\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

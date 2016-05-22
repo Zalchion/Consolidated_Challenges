@@ -22,6 +22,8 @@ namespace Consolidated_Challenges
 			Palindrome("han nah");
 			Palindrome("Dammit I’m mad.");
 
+			Console.WriteLine("Check your own string:");
+			Palindrome(Console.ReadLine());
 			Console.WriteLine("Wish to open the challenge?");
 			string dailyprogrammer = Console.ReadLine();
 			if(dailyprogrammer == "yes" || dailyprogrammer == "y")
@@ -30,44 +32,18 @@ namespace Consolidated_Challenges
 
 		public static void Palindrome(string palindrome)
 		{
-			bool isPalindrome = true;
-			string tempPalindrome = palindrome.ToLower();
-			tempPalindrome = tempPalindrome.Replace(" ", "");
-			tempPalindrome = tempPalindrome.Replace(".", "");
-			tempPalindrome = tempPalindrome.Replace("’", "");
-			tempPalindrome = tempPalindrome.Replace("´", "");
-			tempPalindrome = tempPalindrome.Replace("'", "");
-			tempPalindrome = tempPalindrome.Replace("_", "");
-			tempPalindrome = tempPalindrome.Replace("-", "");
-			tempPalindrome = tempPalindrome.Replace(",", "");
-			tempPalindrome = tempPalindrome.Replace("?", "");
-			tempPalindrome = tempPalindrome.Replace("!", "");
-			int j = tempPalindrome.Length - 1;
-			for(int i = 0; i < tempPalindrome.Length; i++)
-			{
-				if(tempPalindrome[i] == tempPalindrome[j])
-				{
-					isPalindrome = true;
-					j--;
-					break;
-				}
-				else
-				{
-					isPalindrome = false;
-					j--;
-					break;
-				}
-			}
+			palindrome = palindrome.ToLower();
 
-			if(isPalindrome)
-			{
-				Console.WriteLine("Changed string: " + tempPalindrome);
-				Console.WriteLine("Original string: " + palindrome + " IS a palindrome. \n");
-			}
+			palindrome = new string(palindrome.Where(c => char.IsLetterOrDigit(c)).ToArray());
+			var reversed = palindrome.ToCharArray();
+
+			Array.Reverse(reversed);
+			if(palindrome == new string(reversed))
+				Console.WriteLine("The string: " + palindrome + " IS a palindrome. \n");
 			else
 			{
-				Console.WriteLine("Changed string: " + tempPalindrome);
-				Console.WriteLine("Original string: " + palindrome + " is NOT a palindrome. \n");
+				Console.WriteLine("Reversed string: " + new string(reversed));
+				Console.WriteLine("The string: " + palindrome + " is NOT a palindrome. \n");
 			}
 		}
 	}
