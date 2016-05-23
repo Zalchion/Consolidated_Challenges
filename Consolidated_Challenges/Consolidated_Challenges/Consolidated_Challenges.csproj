@@ -92,6 +92,10 @@
     <Compile Include="Challenge 51-75\Challenge053.cs" />
     <Compile Include="Challenge 51-75\Challenge054.cs" />
     <Compile Include="Challenge 51-75\Challenge055.cs" />
+    <Compile Include="Challenge 51-75\Challenge056.cs" />
+    <Compile Include="Challenge 51-75\Challenge057.cs" />
+    <Compile Include="Challenge 51-75\Challenge059.cs" />
+    <Compile Include="Challenge 51-75\Challenge060.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
