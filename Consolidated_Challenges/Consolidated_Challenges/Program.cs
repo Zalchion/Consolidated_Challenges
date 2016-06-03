@@ -13,11 +13,12 @@ namespace Consolidated_Challenges
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("\tDISCLAIMER: I started doing the challenges to learn programming.\n\n");
+			Console.WriteLine("DISCLAIMER: I started doing the challenges to learn programming.\n");
 			
 			while(true)
 			{
-				Console.WriteLine("Write the number of the challenge you wish to view IE ('001' or '077').\n 'help' for commands or 'quit' to quit");
+				string searchString = "";
+				Console.WriteLine("Write the number of the challenge you wish to view IE (001 or 077).\nhelp for commands or quit to quit");
 
 				string input = Console.ReadLine();
 				input = input.ToLower().Trim();
@@ -66,26 +67,27 @@ namespace Consolidated_Challenges
 						case "help":
 						case "commands":
 						case "command":
-							Console.WriteLine("\nCommands:\n'clear', 'quit', 'exit', a three digit number(IE: '001', '077')\n'list', 'listdescending', 'descending', 'listdes'\n'missing', 'missingdescending', 'missingdes'\n'string', 'math' or 'other' ");
+							Console.WriteLine("\nCommands:\nclear, quit, exit, a three digit number(IE: 001, 077)\nlist, listdescending, descending, listdes\nmissing, missingdescending, missingdes\nstring, math, other or search\n");
 							break;
 						case "math":
 						case "maths":
-						case "Math":
-						case "Maths":
 							//Loops through all available challenges, and find all containing math
 							ListChallenges().OrderBy(x => x.Key).Where(x => x.Value.ToLower().Contains("math")).ToList().ForEach(x => { Console.WriteLine(x.Key + "\t" + x.Value); });
 							break;
 						case "string":
-						case "String":
 							//Loops through all available challenges, and find all containing string
 							ListChallenges().OrderBy(x => x.Key).Where(x => x.Value.ToLower().Contains("string")).ToList().ForEach(x => { Console.WriteLine(x.Key + "\t" + x.Value); });
 							break;
 						case "other":
-						case "Other":
 						case "others":
-						case "Others":
 							//Loops through all available challenges, and find all not containing string or math
 							ListChallenges().OrderBy(x => x.Key).Where(x => !x.Value.ToLower().Contains("string")).Where(x => !x.Value.ToLower().Contains("math")).ToList().ForEach(x => { Console.WriteLine(x.Key + "\t" + x.Value); });
+							break;
+						case "search":
+							//Loops through all available challenges, and find all containing the word searched for
+							Console.WriteLine("What do you wish to search for?");
+							searchString = Console.ReadLine();
+							ListChallenges().OrderBy(x => x.Key).Where(x => x.Value.ToLower().Contains(searchString)).ToList().ForEach(x => { Console.WriteLine(x.Key + "\t" + x.Value); });
 							break;
 						default:
 							Console.WriteLine("\nThe command '" + input + "' does not exist.\n");
