@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "List manipulation: Reverse block of 3";
+			return "List Manipulation: Reverse Block of 3";
 		}
 
 		public void Challenge_014()

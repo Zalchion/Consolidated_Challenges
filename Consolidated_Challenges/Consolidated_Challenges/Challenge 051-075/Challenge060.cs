@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "Math problem: Polite numbers";
+			return "Math Problem: Polite Numbers";
 		}
 
 		public void Challenge_060()

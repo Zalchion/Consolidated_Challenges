@@ -15,7 +15,7 @@ namespace Consolidated_Challenges
 
 		public void Challenge_006()
 		{
-			Console.WriteLine("Calculate pi to how many decimals?");
+			Console.WriteLine("Calculate Pi to how many decimals?");
 			int places = int.Parse(Console.ReadLine());
 			Console.WriteLine(CalculatePi(places));
 

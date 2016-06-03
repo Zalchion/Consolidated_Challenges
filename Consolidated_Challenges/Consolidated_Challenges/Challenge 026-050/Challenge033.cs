@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String/dictionary manipulation: Flash Cards";
+			return "String/Dictionary Manipulation: Flash Cards";
 		}
 
 		public void Challenge_033()

@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation: Phone numbers";
+			return "String Manipulation: Phone Numbers";
 		}
 
 		public void Challenge_018()

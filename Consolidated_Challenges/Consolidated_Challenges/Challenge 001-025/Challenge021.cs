@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "List manipulation: Number parsing";
+			return "List Manipulation: Number Parsing";
 		}
 		
 		public void Challenge_021()

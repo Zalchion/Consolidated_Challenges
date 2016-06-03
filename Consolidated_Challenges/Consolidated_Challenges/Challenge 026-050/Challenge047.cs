@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation: Decipher";
+			return "String Manipulation: Decipher";
 		}
 
 		public void Challenge_047()

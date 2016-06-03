@@ -11,7 +11,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "Math problem: Monty Hall Paradox";
+			return "Math Problem: Monty Hall Paradox";
 		}
 
 		public void Challenge_049()

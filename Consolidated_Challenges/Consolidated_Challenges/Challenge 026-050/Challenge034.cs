@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "Math/list: 2 highest numbers squared";
+			return "Math/List: 2 Highest Numbers Squared";
 		}
 
 		public void Challenge_034()

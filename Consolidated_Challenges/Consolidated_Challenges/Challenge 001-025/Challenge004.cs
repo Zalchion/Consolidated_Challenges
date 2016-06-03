@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation: Random password generator";
+			return "String Manipulation: Random Password Generator";
 		}
 
 		public void Challenge_004()

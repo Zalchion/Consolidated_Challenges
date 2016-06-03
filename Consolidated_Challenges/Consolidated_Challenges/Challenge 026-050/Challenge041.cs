@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation: Frameify";
+			return "String Manipulation: Frameify";
 		}
 
 		public void Challenge_041()

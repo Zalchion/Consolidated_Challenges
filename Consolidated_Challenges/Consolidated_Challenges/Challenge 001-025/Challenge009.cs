@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "List manipulation: Sorting";
+			return "List Manipulation: Sorting";
 		}
 
 		public void Challenge_009()

@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation: Palindrome";
+			return "String Manipulation: Palindrome";
 		}
 
 		public void Challenge_029()

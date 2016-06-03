@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "Math problem: Store credits";
+			return "Math Problem: Store Credits";
 		}
 
 		public void Challenge_050()

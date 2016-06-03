@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation: Matrix Cipher";
+			return "String Manipulation: Matrix Cipher";
 		}
 		
 		public void Challenge_054()

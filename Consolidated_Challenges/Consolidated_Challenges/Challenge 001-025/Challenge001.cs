@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation: Simple input/output";
+			return "String Manipulation: Simple Input/Output";
 		}
 
 		public void Challenge_001()

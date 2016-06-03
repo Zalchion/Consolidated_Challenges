@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation: Remove letters";
+			return "String Manipulation: Remove Letters";
 		}
 
 		public void Challenge_016()

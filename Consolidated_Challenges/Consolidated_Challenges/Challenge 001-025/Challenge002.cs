@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "Math problems: f=ma";
+			return "Math Problems: F=ma";
 		}
 
 		public void Challenge_002()

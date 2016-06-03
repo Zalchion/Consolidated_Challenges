@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "List manipulation: Split list";
+			return "List Manipulation: Split List";
 		}
 
 		public void Challenge_023()

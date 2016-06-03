@@ -11,7 +11,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "Math problem: Calculate primes";
+			return "Math Problem: Calculate Primes";
 		}
 
 		public void Challenge_020()

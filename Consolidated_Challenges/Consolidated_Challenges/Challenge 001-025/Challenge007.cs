@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation: Morse Code";
+			return "String Manipulation: Morse Code";
 		}
 
 		public void Challenge_007()

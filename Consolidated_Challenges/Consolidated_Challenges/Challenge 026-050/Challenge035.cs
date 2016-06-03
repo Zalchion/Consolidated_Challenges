@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String/list manipulation: Trianglify";
+			return "String/List Manipulation: Trianglify";
 		}
 
 		public void Challenge_035()

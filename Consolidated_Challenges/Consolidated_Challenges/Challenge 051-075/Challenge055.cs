@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation: Sliding window minimum problem";
+			return "String Manipulation: Sliding Window Minimum Problem";
 		}
 
 		public void Challenge_055()

@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation: Substring location";
+			return "String Manipulation: Substring Location";
 		}
 
 		public void Challenge_059()

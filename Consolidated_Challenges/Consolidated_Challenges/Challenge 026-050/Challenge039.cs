@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String/loop manipulation: Fizz/Buzz";
+			return "String/Loop Manipulation: Fizz-Buzz";
 		}
 
 		public void Challenge_039()

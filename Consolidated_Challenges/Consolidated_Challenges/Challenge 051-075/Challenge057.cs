@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "List manipulation: Highest 3 number sequence of an int array";
+			return "List Manipulation: Highest 3 Number Sequence of an Int Array";
 		}
 
 		public void Challenge_057()

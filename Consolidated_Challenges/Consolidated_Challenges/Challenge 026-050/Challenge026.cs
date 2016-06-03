@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation: Duplicate letter separation";
+			return "String Manipulation: Duplicate Letter Separation";
 		}
 
 		public void Challenge_026()

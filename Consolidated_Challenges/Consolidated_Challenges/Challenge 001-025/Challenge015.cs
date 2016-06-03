@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation: Trimming";
+			return "String Manipulation: Trimming";
 		}
 
 		public void Challenge_015()

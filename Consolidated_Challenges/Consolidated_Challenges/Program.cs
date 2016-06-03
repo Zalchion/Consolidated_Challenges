@@ -14,10 +14,11 @@ namespace Consolidated_Challenges
 		static void Main(string[] args)
 		{
 			Console.WriteLine("\tDISCLAIMER: I started doing the challenges to learn programming.\n\n");
-			Console.WriteLine("Write the number of the challenge you wish to view IE ('001' or '077').\n 'help' for commands or 'quit' to quit");
-
+			
 			while(true)
 			{
+				Console.WriteLine("Write the number of the challenge you wish to view IE ('001' or '077').\n 'help' for commands or 'quit' to quit");
+
 				string input = Console.ReadLine();
 				input = input.ToLower().Trim();
 

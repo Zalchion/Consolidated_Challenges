@@ -11,7 +11,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation: Count words, lines and characters in a file";
+			return "String Manipulation: Count Words, Lines And Characters in a File";
 		}
 
 		public void Challenge_037()

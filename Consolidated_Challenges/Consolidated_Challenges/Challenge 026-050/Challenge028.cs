@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "List manipulation: Find duplicates";
+			return "List Manipulation: Find Duplicates";
 		}
 
 		public void Challenge_028()

@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation: Chess board";
+			return "String Manipulation: Chessboard";
 		}
 
 		public void Challenge_045()

@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "Loops: For loop";
+			return "Loops: For-loop";
 		}
 		public void Challenge_008()
 		{

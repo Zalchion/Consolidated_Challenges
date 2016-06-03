@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "Loops: Several ways to loop";
+			return "Loops: Several Ways to Loop";
 		}
 
 		public void Challenge_040()

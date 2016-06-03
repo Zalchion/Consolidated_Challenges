@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation: Pyramid";
+			return "String Manipulation: Pyramid";
 		}
 
 		public void Challenge_017()

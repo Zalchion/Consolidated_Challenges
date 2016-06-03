@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "Math problem: Casino";
+			return "Math Problem: Casino";
 		}
 
 		public void Challenge_032()

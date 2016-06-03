@@ -12,7 +12,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String/math manipulation: Read file, count letters";
+			return "String Manipulation: Read File, Count Letters";
 		}
 
 		public void Challenge_019()

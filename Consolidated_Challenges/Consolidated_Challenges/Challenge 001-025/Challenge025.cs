@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "Math problem: Calculate majority";
+			return "Math Problem: Calculate Majority";
 		}
 
 		public void Challenge_025()

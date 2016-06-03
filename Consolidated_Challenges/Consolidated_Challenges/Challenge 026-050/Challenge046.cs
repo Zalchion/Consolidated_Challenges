@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "Math/String manipulation: Number -> bit -> number";
+			return "Math/String Manipulation: Number -> Bit -> Number";
 		}
 
 		public void Challenge_046()

@@ -11,7 +11,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "Math problems: Linear array sorting";
+			return "Math Problems: Linear Array Sorting";
 		}
 
 		public void Challenge_048()

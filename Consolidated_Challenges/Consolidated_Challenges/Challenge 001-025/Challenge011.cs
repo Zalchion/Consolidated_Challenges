@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "Math problem: Calculate day";
+			return "Math Problem: Calculate Day";
 		}
 
 		public void Challenge_011()

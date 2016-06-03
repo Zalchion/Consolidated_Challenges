@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "Math/list problem: Find target number from 2 ints in list of primes";
+			return "Math/List Problem: Find Target Number From 2 Ints in a List of Primes";
 		}
 
 		public void Challenge_030()

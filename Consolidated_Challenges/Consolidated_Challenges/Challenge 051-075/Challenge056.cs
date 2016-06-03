@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation: Unavoidable pattern: zimin words";
+			return "String Manipulation: Unavoidable Pattern: Zimin Words";
 		}
 
 		public void Challenge_056()

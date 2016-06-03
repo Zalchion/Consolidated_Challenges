@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation: Permutations";
+			return "String Manipulation: Permutations";
 		}
 
 		public void Challenge_012()

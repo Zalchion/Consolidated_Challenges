@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation: Splitting & counting";
+			return "String Manipulation: Splitting & Counting";
 		}
 
 		public void Challenge_044()

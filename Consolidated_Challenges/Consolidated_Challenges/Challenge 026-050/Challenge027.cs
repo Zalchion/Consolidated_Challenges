@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "String manipulation: Year to century";
+			return "String Manipulation: Year to Century";
 		}
 
 		public void Challenge_027()

@@ -10,7 +10,7 @@ namespace Consolidated_Challenges
 	{
 		public static string Description()
 		{
-			return "Math problem: Lockers";
+			return "Math Problem: Lockers";
 		}
 
 		public void Challenge_036()
