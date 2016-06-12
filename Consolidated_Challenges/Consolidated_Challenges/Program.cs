@@ -87,7 +87,13 @@ namespace Consolidated_Challenges
 							//Loops through all available challenges, and find all containing the word searched for
 							Console.WriteLine("What do you wish to search for?");
 							searchString = Console.ReadLine();
-							ListChallenges().OrderBy(x => x.Key).Where(x => x.Value.ToLower().Contains(searchString)).ToList().ForEach(x => { Console.WriteLine(x.Key + "\t" + x.Value); });
+							if(searchString[0].ToString() == "-")
+							{
+								searchString = searchString.Substring(1, searchString.Length-1);
+								ListChallenges().OrderBy(x => x.Key).Where(x => !x.Value.ToLower().Contains(searchString)).ToList().ForEach(x => { Console.WriteLine(x.Key + "\t" + x.Value); });
+							}
+							else
+								ListChallenges().OrderBy(x => x.Key).Where(x => x.Value.ToLower().Contains(searchString)).ToList().ForEach(x => { Console.WriteLine(x.Key + "\t" + x.Value); });
 							break;
 						default:
 							Console.WriteLine("\nThe command '" + input + "' does not exist.\n");
